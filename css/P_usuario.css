@@ -48,7 +48,8 @@
 .seguidores p{	
 	padding-left: 15px;	
 	height: 55px;
- /* 	border: 1px solid red;	  */
+  	overflow: hidden;
+/*   	border: 1px solid red;	   */
 }
 .seguidores img{
 	width: 55px;
