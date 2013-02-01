@@ -1,0 +1,14 @@
+.redesweb{
+	background: gray;	
+	height: 200px;
+	border: 1px solid;
+}
+.redes{
+
+	height: 50px;
+	border: 1px solid;
+}
+.span12, .span8, .span4, .span3{
+	border: 1px solid;
+	background: gray;
+}
