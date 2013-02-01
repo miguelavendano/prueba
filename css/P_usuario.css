@@ -3,6 +3,10 @@
 	margin-top: 50px;	
 }
 
+.opciones .navbar-inner{
+	min-height: 40px;
+} 
+
 .usuario{
 	margin-bottom: 10px;
 	border: 1px solid #ccc;
