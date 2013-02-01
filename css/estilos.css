@@ -1,0 +1,78 @@
+/*----------------------- Cabeza y Cuerpo ----------------*/
+.header .container-fluid{
+	float: inherit;
+	margin: 0 auto;
+	margin-top: 10px;
+	/* border: 1px solid; */
+	max-width: 950px;
+
+} 
+
+.header{
+
+	color: white;
+}
+
+.contenido{
+	float: inherit;
+	margin-top: 100px;
+}
+
+body{
+	/*background:#F2F2F2;	*/
+}
+
+#a-nav{
+
+	color: white;
+	 
+
+}
+
+
+/*Presentacion principal*/
+
+
+.presentacion{
+
+	width: inherit;
+	height: 750px;
+	border: 2px solid;
+	background: red;
+
+}
+
+
+
+.header .container-fluid{
+	margin-top: 0px;
+}
+
+
+.ingresar h3{
+	float: center;
+	margin-left: 30px;
+	color: white;
+}
+
+.ingresar form{
+
+	margin-left: 5px;
+}
+
+
+.ingresar{	
+	float: right;
+	position: absolute;
+	z-index: 100;
+	margin-top: 50px;
+	margin-left: 15px;
+	background: green;
+	width: 250px;
+	height: 250px;
+	/*filter: Alpha(opacity=60);*/
+	opacity: 0.5;
+	color: white;
+	border-radius: 5px;
+}
+
