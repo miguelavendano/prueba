@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>    
+    <meta charset="utf-8">
+    <title>Bootstrap, from Twitter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="css/estilo-ferro.css" rel="stylesheet">
+
+    <!-- Elementos para el ferrocaril de imagenes -->   
+        <!-- include jQuery + carouFredSel plugin -->
+        <script type="text/javascript" language="javascript" src="js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+
+        <!-- optionally include helper plugins -->
+        <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+        <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+
+        <!-- fire plugin onDocumentReady -->
+
+        <script type="text/javascript" language="javascript">
+            $(function() {
+                //  Responsive layout, resizing the items
+                $('#foo').carouFredSel({
+                    //auto: false,
+                    responsive: true,
+                    prev: '#prev',
+                    next: '#next',                  
+                    //width: '100%',                    
+                    pagination: "#paginas",
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    },
+                    scroll: 2,
+                    items: {
+                        width: 400,
+                        //height: '30%',    //  optionally resize item-height
+                        visible: {
+                            min: 1,
+                            max: 6                            
+                        }
+                    }
+                });
+
+                $("#foo1").carouFredSel({
+                    //width: "variable",
+                    //height: "variable", 
+                    //direction: "right",
+                    //direction: "left",
+                    direction: "up",
+                    //direction: "down",
+                    prev: '#prev1',
+                    next: '#next1',    
+                    items: {
+                        visible: 1,
+                        minimum: 1,
+                        //width: "variable",
+                        //height: "variable"
+                    },
+                    scroll: {
+                        //fx: "none",
+                        //fx: "scroll",
+                        //fx: "directscroll",
+                        //fx: "fade",
+                        //fx: "crossfade",
+                        //fx: "cover",
+                        //fx: "cover-fade",
+                        fx: "uncover",
+                        //fx: "uncover-fade",
+                        //easing: "linear"
+                        easing: "swing"
+                        //easing: "quadratic"
+                        //easing: "cubic"
+                        //easing: "elastic"
+                    },
+                    //mousewheel: true,
+                    //swipe: true
+                });
+            });
+        </script>
+
+</head>
+<body>
+        <div class="contenido">
+                        <div class="ferro">    <!-- FERROCARIL DE IMAGENES -->
+                            <div class="container-fluid">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="row-fluid list_carousel responsive">
+                                            <!-- <div class="span1">
+                                                <a id="prev" class="prev" href="#"></a>           
+                                            </div> -->
+
+                                            <div class="span10">
+                                                                                           
+                                                <ul id="foo">
+                                                        <li>
+                                                            <img src="images/img_1.jpg"/>
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_2.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_3.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_4.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_5.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_6.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_7.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_8.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_9.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_10.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_11.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                        <li>
+                                                            <img src="images/img_12.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>                                    
+                                                        <li>
+                                                            <img src="images/img_13.jpg" />
+                                                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                                                        </li>   
+                                                </ul>       
+                                            </div>                                                 
+<!--                                             <div class="span1">
+    <a id="next" class="next" href="#"></a>
+</div> -->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>  
+        </div>  
+</body>
+</html>

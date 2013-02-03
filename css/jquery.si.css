@@ -25,7 +25,7 @@ div.si div.uploadButton {
 div.si div.uploadButton div {
 	width: 156px;
 	height: 34px;
-	background: url(examinar.png) 0 0 no-repeat;
+	background: url(img/examinar.png) 0 0 no-repeat;
 	left: -156px;
 	position: absolute;
 	z-index: 1;
