@@ -12,8 +12,6 @@
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
       #map_canvas { height: 100% }
     </style>
     <script type="text/javascript"
@@ -33,32 +31,13 @@
 
 <!-- *********************** -->
 
-
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/Carousel-2.0.0.css" rel="stylesheet" type="text/css" />
     <link href="css/estilos.css" rel="stylesheet">    
     <link href="css/estilos_perfil_empresa.css" rel="stylesheet"> 
+    <link href="css/estilo-ferro.css" rel="stylesheet">
 
-    <!-- Elementos para el carrusel --> 
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/lazy-bootstrap-carousel.js"></script>
-    <script src="js/base-carrusel.js"></script>
 
-    <!-- Elementos para el ferrocaril de imagenes -->   
-
-    <script src="js/jsCarousel-2.0.0.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#carouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
-        });               
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#micarouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
-        });               
-    </script>
 </head>
 <body onload="initialize()">
 
@@ -178,434 +157,437 @@
         <div class="row-fluid"><hr></hr></div>
 
         <div class="container-fluid">  <!-- ferrocarril -->
-            <div class="row-fluid">                         
-                <div class="span12"> 
-                    <h2>Nuestros Planes Truristicos</h2>
-                    <div class="ferro">    <!-- FERROCARIL DE IMAGENES -->
-                        <div class="row-fluid">
-                            <div class="span12">            
-                                <div class="row-fluid" id="micarouselh">
+            <div class="row-fluid list_carousel responsive">
+                <div class="span12">
+                    <ul id="foo">
+                        <li>
+                            <img src="images/img_1.jpg"/>
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_2.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_3.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_4.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_5.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_6.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_7.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_8.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_9.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_10.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                        <li>
+                            <img src="images/img_11.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                         </li>   
+                        <li>
+                            <img src="images/img_12.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>                                 
+                        <li>
+                            <img src="images/img_13.jpg" />
+                            <div class="ferro-titulo">Lanzamiento de parapente</div>
+                        </li>   
+                    </ul>                     
+                    <div id="paginas" class="paginas"></div>
+                </div>
+            </div>
+        </div>                            
+     
+        <div class="row-fluid"><hr></hr></div>
 
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_1.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>                
-                                    </div>   
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_2.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>
-                                    </div>   
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_3.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>
-                                    </div>                    
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_4.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>
-                                    </div>   
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_5.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>
-                                    </div>   
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_6.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>                                                                    
-                                    </div>   
-                                    <div class="span3">
-                                        <div class="thumbnail-titulo">Titulo</div>
-                                        <img alt="" src="images/img_7.jpg" /><br />
-                                        <div>
-                                            <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                        </div>
-                                    </div>   
+        <div class="container-fluid">  
+            <div class="row-fluid ">
+                <div class="span12">
+                    <div class="row-fluid ">        
+                        <div class="span9">
+                        
+                            <h2>Actividad Reciente </h2>
+                            <div class="pestañas" id="contenido">
+                                <div class="tabbable">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#1" data-toggle="tab">Experiencias</a></li>
+                                        <li><a href="#2" data-toggle="tab">Visitaría</a></li>
+                                        <li><a href="#3" data-toggle="tab">Imagenes</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="1">    
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Cristalinas</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Cristalinas</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Cristalinas</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Cristalinas</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Rio El Borrachero</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Rio El Borrachero</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Rio El Borrachero</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Rio El Borrachero</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                        </div>  <!-- pestaña 1 -->
+                                    
+                                        <div class="tab-pane" id="2"> 
+                                            <a href="#">
+                                                <div class="experiencia">               
+                                                    <div class="span3">
+                                                        <div class="imagen-experiencia">
+                                                            <img class="im1" src="img/Tulipanes.jpg"></img>
+                                                            <img class="im2" src="img/Desierto.jpg"></img>
+                                                            <img class="im3" src="img/Faro.jpg"></img> 
+                                                        </div>          
+                                                    </div>
+                                                    <div class="span9">
+                                                        <div class="info_ex">
+                                                            <a href="#"><h4>Cristalinas</h4></a>
+                                                            <p>
+                                                                Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
+                                                                Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
+                                                                <a href="#">leer mas...</a>
+                                                            </p>
+                                                        </div>                      
+                                                    </div>    
+                                                </div>  
+                                            </a>                            
+                                        </div>   <!-- pestaña 2 -->
+
+                                        <div class="tab-pane" id="3"> 
+                                            <a href="#">
+                                                <div id="content">
+                                                    <div class="box">
+                                                        <img src="img/Agra-1.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-2.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-3.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-4.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-5.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-6.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-7.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-8.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-9.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-10.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-11.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-12.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-13.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-14.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-15.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-16.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-17.jpg">
+                                                    </div>
+                                                    <div class="box">
+                                                        <img src="img/Agra-18.jpg">
+                                                    </div>
+                                                </div>
+                                            </a>                            
+                                        </div>   <!-- pestaña 3 -->
+                                    </div>
                                 </div>
-                            </div>                        
+                            </div>     <!-- pestañas -->
+                            <!-- </div>   <!-- span9 --> 
                         </div>
-                    </div>  
+
+                        <div class="span3">
+                            <h3>Social Media</h3>                
+
+                            <div class="row-fluid">
+                                <div class="seguidores">                            
+                                    <h3><a href="#seguidores">Visitantes</a></h3>
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                </div> <!-- seguidores -->                        
+                            </div>
+
+                            <div class="row-fluid"><hr></hr></div>
+
+                            <div class="row-fluid">
+
+                                <div class="seguidores">                            
+                                    <h3><a href="#seguidores">Quieren visitarlo</a></h3>
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                </div> <!-- seguidores -->   
+
+                            </div>                
+                            
+                        </div>    <!-- pestañas y social media -->
+                    </div>        
                 </div>
             </div>
         </div>
+        
         <div class="row-fluid"><hr></hr></div>
 
-        <div class="container-fluid">
-            <div class="span9">
-            
-                <h2>Actividad Reciente </h2>
-                <div class="pestañas" id="contenido">
-                    <div class="tabbable">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a href="#1" data-toggle="tab">Experiencias</a></li>
-                            <li><a href="#2" data-toggle="tab">Visitaría</a></li>
-                            <li><a href="#3" data-toggle="tab">Imagenes</a></li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="1">    
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Cristalinas</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Cristalinas</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Cristalinas</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Cristalinas</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                            </div>  <!-- pestaña 1 -->
-                        
-                            <div class="tab-pane" id="2"> 
-                                <a href="#">
-                                    <div class="experiencia">               
-                                        <div class="span3">
-                                            <div class="imagen-experiencia">
-                                                <img class="im1" src="img/Tulipanes.jpg"></img>
-                                                <img class="im2" src="img/Desierto.jpg"></img>
-                                                <img class="im3" src="img/Faro.jpg"></img> 
-                                            </div>          
-                                        </div>
-                                        <div class="span9">
-                                            <div class="info_ex">
-                                                <a href="#"><h4>Cristalinas</h4></a>
-                                                <p>
-                                                    Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                    Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                    <a href="#">leer mas...</a>
-                                                </p>
-                                            </div>                      
-                                        </div>    
-                                    </div>  
-                                </a>                            
-                            </div>   <!-- pestaña 2 -->
-
-                            <div class="tab-pane" id="3"> 
-                                <a href="#">
-                                    <div id="content">
-                                        <div class="box">
-                                            <img src="img/Agra-1.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-2.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-3.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-4.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-5.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-6.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-7.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-8.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-9.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-10.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-11.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-12.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-13.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-14.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-15.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-16.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-17.jpg">
-                                        </div>
-                                        <div class="box">
-                                            <img src="img/Agra-18.jpg">
-                                        </div>
-                                    </div>
-                                </a>                            
-                            </div>   <!-- pestaña 3 -->
-                        </div>
-                    </div>
-                </div>     <!-- pestañas -->
-                <!-- </div>   <!-- span9 --> 
-            </div>
-
-            <div class="span3">
-                <h3>Social Media</h3>                
-
-                <div class="row-fluid">
-                    <div class="seguidores">                            
-                        <h3><a href="#seguidores">Visitantes</a></h3>
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                    </div> <!-- seguidores -->                        
-                </div>
-
-                <div class="row-fluid"><hr></hr></div>
-
-                <div class="row-fluid">
-
-                    <div class="seguidores">                            
-                        <h3><a href="#seguidores">Quieren visitarlo</a></h3>
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/andrea.jpg"/>
-                            <a href="#/Colombia">Andrea Rojas</a>
-                        </p>                                                    
-                        <p>
-                            <img src="img/julian.jpg"/>
-                            <a href="#/Colombia">Julian Varela</a>
-                        </p>                                                    
-                    </div> <!-- seguidores -->   
-
-                </div>                
-                
-
-            </div>    <!-- pestañas y social media -->
-        </div>        
-
-        
-
+    </div>
 
     <footer>
         <div class="container-fluid">
@@ -623,7 +605,54 @@
             </div>          
         </div>
     </footer>   
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script> 
+    
+    <script src="js/jquery-1.8.2.min.js"></script>
+    
+    <!-- Elementos para el carrusel --> 
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/lazy-bootstrap-carousel.js"></script>
+    <script src="js/base-carrusel.js"></script>
+
+
+    <!-- ....Elementos para el ferrocaril de imagenes.... -->   
+        <!-- include jQuery + carouFredSel plugin -->
+    <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+        <!-- optionally include helper plugins -->
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+
+    <script type="text/javascript" language="javascript">
+            $(function() {
+                //  Responsive layout, resizing the items
+                $('#foo').carouFredSel({
+                    responsive: true,
+                    prev: '#prev',
+                    next: '#next',                  
+                    //width: '100%',                    
+                    pagination: "#paginas",
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    },                    
+                    scroll: {
+                        fx: "crossfade",                        
+                        //easing: "linear"
+                        ////easing: "swing"
+                        easing: "quadratic"
+                    },
+
+                    items: {
+                        width: 300,
+                        visible: {
+                            min: 1,
+                            max: 6                            
+                        }
+                    }
+                });
+            });
+    </script>
 
 </body>
 </html>
