@@ -92,7 +92,7 @@ a.prev span, a.next span {
 	text-align: left;
 	position: absolute;
 	float: left;  	 	
- 	z-index: 3; 	
- 	/* background: black; */  	
-}
-
+ 	z-index: 3; 
+ 	/* border 2px solid red;
+ 	 background: black; */	
+} 

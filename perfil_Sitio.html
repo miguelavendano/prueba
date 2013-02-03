@@ -34,7 +34,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
-
+    <link href="css/datepicker.css" rel="stylesheet" />
     <link href="css/estilos.css" rel="stylesheet">
     <link href="css/estilos_perfil_sitio.css" rel="stylesheet">    
     <link href="css/estilo-ferro.css" rel="stylesheet">
@@ -66,7 +66,9 @@
                                 <li class="divider-horizontal"></li>
                                 <li><a id="a-nav" href="#">Ingresar</a></li>
                                 <li class="divider-horizontal"></li>
-                                <li><a id="a-nav" href="#">Registrarse</a></li>
+                                <li>
+                                    <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
+                                </li>
                             </ul>                                                                                   
                         </div                 
                       </div>                  
@@ -332,6 +334,7 @@
      
         <div class="row-fluid"><hr></hr></div>
 
+        
     </div>
 
     <footer>
@@ -351,7 +354,8 @@
         </div>
     </footer>   
     
-    
+
+    <script src="js/jquery.js"></script>   
     <script src="js/jquery-1.8.2.min.js"></script>
 
     <!-- ....Elementos para el ferrocaril de imagenes.... -->   
