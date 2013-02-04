@@ -15,19 +15,17 @@
 	border-radius: 10px;
 	background-color: #F3F3F3;
 }
-.usuario .nombre{
-	padding-left: 50px;
+.usuario .nombre h3{
+	text-align: center;	
 }
-.usuario .foto_perfil{	
-	padding-left: 50px;
-	/* padding-left: 16%; */
-	/* border: 1px solid red; */
+.usuario .foto_perfil{
+	margin: 0px auto;		
+	width: 200px;
+	height: 200px;	
 }
-.usuario .foto_perfil img{
-	width:200px;
-	height: 200px;
-	border: 1px solid #ccc;
-
+.usuario .foto_perfil img{	
+	width: 100%;
+	height: 100%;
 }
 .usuario .info{
 	padding: 15px;
