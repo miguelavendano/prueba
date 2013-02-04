@@ -1,0 +1,14 @@
+.resultado{
+
+  border: 1px solid;
+  height: 200px;
+}
+
+.imagen-resultado{
+
+  border: 1px solid;
+  width: 150px;
+  height: 150px;
+  margin: 0px auto;
+}
+

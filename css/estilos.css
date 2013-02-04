@@ -4,7 +4,8 @@ body{
 
 .contenido{
 	float: inherit;
-	margin-top: 100px;
+  max-width: 1100px;
+  margin: 0px auto;
 }
 
 #contenido{	
