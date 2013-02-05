@@ -1,0 +1,66 @@
+/* MODAL CONFIRMAR SALIDA */
+#modalconf .modal-header h3{
+	text-align: center;	
+} 
+#modalconf .b_conf{ 	
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+#modalconf .b_conf .span5{
+	width: 50%;
+	margin: 0 auto;
+	border: 1px solid blue;
+}
+#modalconf .b_conf .span5 .b_no{
+	width: 80%;		
+}
+#modalconf .b_conf .span5 .b_si{
+	width: 80%;		
+}
+
+
+/* MODAL COMPARTIR EXPERIENCIA */
+#modalexp .row-fluid .im_cargar{
+	border: 1px solid red;	
+}
+
+/* #modalexp .row-fluid .b_car_im{
+	border: 1px solid blue;	
+} */
+
+/* INPUT FILE */
+.SI-FILES-STYLIZED label.cabinet{
+	display: block;
+	/* background: url(btn-choose-file.gif) no-repeat 0px 0px; */
+	overflow: hidden; 	
+	width: 60px;
+	height: 50px;
+/* 	width: 79px; 
+height: 22px; */
+	cursor: pointer;
+	float: right;		
+	text-align: center;		
+}
+.SI-FILES-STYLIZED label.cabinet input.file{
+	width: auto; 
+	height: 100%; 
+	position: relative; 	
+	opacity: 0;
+	-moz-opacity: 0;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0); 		
+}
+
+
+
+
+
+{
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
