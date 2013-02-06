@@ -25,22 +25,15 @@
 	border: 1px solid red;	
 }
 
-/* #modalexp .row-fluid .b_car_im{
-	border: 1px solid blue;	
-} */
-
 /* INPUT FILE */
 .SI-FILES-STYLIZED label.cabinet{
-	display: block;
-	/* background: url(btn-choose-file.gif) no-repeat 0px 0px; */
+	display: block;	
 	overflow: hidden; 	
-	width: 60px;
+	width: 50px;
 	height: 50px;
-/* 	width: 79px; 
-height: 22px; */
 	cursor: pointer;
 	float: right;		
-	text-align: center;		
+	text-align: center;			
 }
 .SI-FILES-STYLIZED label.cabinet input.file{
 	width: auto; 
