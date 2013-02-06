@@ -6,11 +6,8 @@
 }
 
 .resultado{
-
   /*border: 1px solid;*/
   height: 180px;
-
-
 }
 
 .imagen-resultado{
@@ -38,3 +35,9 @@
 #titulo{
   /*background-color: black;*/
 }
+
+
+#R_busqueda .navbar-inner{
+  min-height: 40px;
+} 
+
