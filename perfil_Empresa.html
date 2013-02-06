@@ -38,6 +38,7 @@
     <link href="css/estilos.css" rel="stylesheet">    
     <link href="css/estilos_perfil_empresa.css" rel="stylesheet"> 
     <link href="css/estilo-ferro.css" rel="stylesheet">    
+    <link href="css/resultado_busqueda.css" rel="stylesheet">    
 
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -242,102 +243,178 @@
                             <div class="pestañas" >
                                 <div class="tabbable">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a href="#1" data-toggle="tab">Experiencias</a></li>
-                                        <li><a href="#2" data-toggle="tab">Visitaría</a></li>
-                                        <li><a href="#3" data-toggle="tab">Imagenes</a></li>
+                                        <li class="active"><a href="#1" data-toggle="tab">Todos los planes</a></li>
+                                        <li><a href="#2" data-toggle="tab">Actividad reciente</a></li>
+                                        <li><a href="#3" data-toggle="tab">Gateria de imagenes</a></li>
                                     </ul>
                                     <div class="tab-content">
                                         <div class="tab-pane active" id="1">           
-                                            <div class="row-fluid experiencia">
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
+                                            
+                                            <div class="row-fluid">
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
                                                 </div>
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Cristalinas</h4></a>
-                                                    <p>
-                                                        Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                        Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                        <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>        
-                                            </div>                                        
-                                            <div class="row-fluid experiencia">               
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
-                                                </div>                                            
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                    <p>
-                                                        Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                        Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                        <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>    
-                                            </div>
-                                            <div class="row-fluid experiencia">
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
                                                 </div>
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Cristalinas</h4></a>
-                                                    <p>
-                                                        Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                        Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                        <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>        
-                                            </div>                                        
-                                            <div class="row-fluid experiencia">               
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
-                                                </div>                                            
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                    <p>
-                                                        Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                        Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                        <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>    
-                                            </div>
-                                            <div class="row-fluid experiencia">
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
+                                                </div>                                                                                                
+             
+                                            </div>       
+
+                                            <div class="row-fluid">
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
                                                 </div>
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Cristalinas</h4></a>
-                                                    <p>
-                                                        Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                        Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                        <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>        
-                                            </div>                                        
-                                            <div class="row-fluid experiencia">               
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
-                                                </div>                                            
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Rio El Borrachero</h4></a>
-                                                    <p>
-                                                        Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
-                                                        Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
-                                                        <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>    
-                                            </div>                                                                                                                     
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
+                                                </div>
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
+                                                </div>                                                                                                
+             
+                                            </div> 
+                                            <div class="row-fluid">
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
+                                                </div>
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
+                                                </div>
+                                                <div class="span4" id="resultado">
+                                                    <div class="row-fluid" id="titulo">
+                                                        <div id="titulo-result">                                
+                                                                <h5><i class="icon-home"></i>Hotel del Llano</h5>
+                                                        </div>
+
+                                                    </div>
+                                                    <hr>                        
+                                                    <div class="row-fluid">
+                                                        <div class="resultado">
+                                                            <div class="imagen-resultado">                                    
+                                                                <img src="imagenes/hotel_llano.jpg">
+                                                            </div>
+                                                            
+                                                        </div>                            
+                                                    </div>
+                                                </div>                                                                                                
+             
+                                            </div>                                             
+
+
                                         </div>  <!-- pestaña 1 -->
                                     
                                         <div class="tab-pane" id="2"> 
