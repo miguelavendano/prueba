@@ -30,17 +30,13 @@ body{
 .carousel .item {
     background-color: #000;
 }
-
 .carrusel_publicidad{	
 	background-color: #fff;
 	/*border: 1px blue solid;	*/
 	width: 100%;
-	height: 400px;
-	
+	height: 400px;	
 }
-
 .carrusel_publicidad img{
-
 	float: center;
 	margin: 0 auto;
 	height:400px;
@@ -49,8 +45,6 @@ body{
 
 
 /************************ visitantes y admiradores ************************/
-
-
 .seguidores{	
 	padding: 10px;
 	height: 400px;	
@@ -60,11 +54,7 @@ body{
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	overflow: auto;
-  scrollbar-base-color:pink;
-  scrollbar-arrow-color:purple;
-
 }
-
 .seguidores h3{	
 	margin: 0px;
 	margin-bottom: 10px;
@@ -73,7 +63,7 @@ body{
 .seguidores p{	
 	padding-left: 15px;	
 	height: 55px;
-  	overflow: hidden;
+ 	overflow: hidden;
 
 }
 .seguidores img{

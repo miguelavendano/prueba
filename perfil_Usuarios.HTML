@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Perfil de Usuario</title>
-	<link href="css/bootstrap.css" rel="stylesheet">    
+	<link href="css/bootstrap.css" rel="stylesheet" />    
     <link href="css/bootstrap-responsive.css" rel="stylesheet" /> 
-	<link href="css/P_usuario.css" rel="stylesheet">    
-    <link href="css/estilos.css" rel="stylesheet">
+	<link href="css/P_usuario.css" rel="stylesheet" />    
+    <link href="css/estilos.css" rel="stylesheet" />
     <link href="css/datepicker.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/estilo_modal.css" rel="stylesheet">
-
+    <link href="css/estilo_modal.css" rel="stylesheet" />
+    <link href="css/jquery.jscrollpane.css" rel="stylesheet" />    
 </head>
 <body>    
     <header>    
@@ -56,7 +56,7 @@
 
     </header>
 
-    <div class="contenido">
+    <div class="contenido" id="P_usuario">
 
     	<div class="container-fluid perfil">
             <div class="row-fluid">
@@ -101,7 +101,7 @@
                             	</div>
                             </div>      <!-- usuario -->
                             
-                        	<div class="seguidores">                            
+                        	<div class="seguidores scroll-pane">                            
                                 <h3><a href="#seguidores">Seguidores</a></h3>
                         		<p>
                         			<img src="img/andrea.jpg"/>
@@ -398,7 +398,7 @@
                           <label class="control-label">Fecha de Nacimiento: </label>
                             <div class="controls">
                               <div class="input-append date" id="dp_edi" data-date="12/02/2013" data-date-format="dd/mm/yyyy">
-                                <input class="span2" size="16" value="12/02/2012" readonly="readonly" type="text">
+                                <input class="span1" size="16" value="12/02/2012" readonly="readonly" type="text">
                                 <span class="add-on"><i class="icon-calendar"></i></span>
                               </div>
                             </div> 
@@ -645,6 +645,22 @@
     <script src="js/base-galeria.js"></script>
 
 
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+
+    <script>
+        $(function(){            
+
+            $('.scroll-pane').jScrollPane(
+                {
+                    showArrows: false,
+                    verticalDragMinHeight: 30,
+                    verticalDragMaxHeight: 200
+                    //horizontalGutter: 10
+                }
+            );
+        });
+    </script>    
 
 </body>
 </html>

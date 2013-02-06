@@ -6,6 +6,11 @@
 .opciones .navbar-inner{
 	min-height: 40px;
 } 
+.opciones .navbar-inner li{
+	margin: 0 auto;
+	font-size: 12px;
+	padding-left: 10px;
+}
 
 .usuario{
 	margin-bottom: 10px;
