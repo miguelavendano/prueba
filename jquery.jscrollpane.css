@@ -5,30 +5,34 @@
  * may not operate correctly without them.
  */
 
-.jspContainer{
+.jspContainer
+{
 	overflow: hidden;
 	position: relative;
 }
 
-.jspPane{
+.jspPane
+{
 	position: absolute;
 }
 
-.jspVerticalBar{
+.jspVerticalBar
+{
 	position: absolute;
 	top: 0;
-	right: 10px;
-	width: 8px;
+	right: 0;
+	width: 16px;
 	height: 100%;
 	background: transparent;
 }
 
-.jspHorizontalBar{
+.jspHorizontalBar
+{
 	position: absolute;
-    bottom: 5px;
+	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 8px;
+	height: 16px;
 	background: transparent;
 }
 
@@ -39,33 +43,35 @@
 	padding: 0;
 }
 
-.jspCap{
+.jspCap
+{
 	display: none;
 }
 
-.jspHorizontalBar .jspCap{
+.jspHorizontalBar .jspCap
+{
 	float: left;
 }
 
-.jspTrack{
-	background: transparent;
-	/* background: #243553;	color fondo de la barra */
+.jspTrack
+{
+	background: #243553;	/* color fondo de la barra */
 	position: relative;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;		
 }
 
-.jspDrag{
-	background: url(img/transparent-black.png) repeat;
-	/* background: #5FA4F2;	color de la barra */
+.jspDrag
+{
+	background: #5FA4F2;	/* color de la barra */
 	position: relative;
 	top: 0;
 	left: 0;
 	cursor: pointer;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;			
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;			
 }
 
 .jspHorizontalBar .jspTrack,
@@ -75,40 +81,46 @@
 	height: 100%;
 }
 
-.jspArrow{
+.jspArrow
+{
 	background: #243553;  /* color flecha sin barra pegada */
 	text-indent: -20000px;
 	display: block;
 	cursor: pointer;
 }
 
-.jspArrow.jspDisabled{
+.jspArrow.jspDisabled
+{
 	cursor: default;
 	background: #005DCC;   /* color flecha con barra pegada */
 }
 
-.jspVerticalBar .jspArrow{
+.jspVerticalBar .jspArrow
+{
 	height: 16px;
 }
 
-.jspHorizontalBar .jspArrow{
+.jspHorizontalBar .jspArrow
+{
 	width: 16px;
 	float: left;
 	height: 100%;
 }
 
-.jspVerticalBar .jspArrow:focus{
+.jspVerticalBar .jspArrow:focus
+{
 	outline: none;
 }
 
-.jspCorner{
+.jspCorner
+{
 	background: #eeeef4;
 	float: left;
 	height: 100%;
-	display:none;
 }
 
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
-* html .jspCorner{
+* html .jspCorner
+{
 	margin: 0 -3px 0 0;
 }

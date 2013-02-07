@@ -11,6 +11,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <link href="css/estilo_modal.css" rel="stylesheet" />
     <link href="css/jquery.jscrollpane.css" rel="stylesheet" />    
+
 </head>
 <body>    
     <header>    
@@ -66,13 +67,15 @@
                             <div class="opciones">
                                 <div class="navbar">
                                     <div class="navbar-inner">          
-                                        <ul class="nav nav-list">
+                                        <ul class="nav">
                                             <li>
                                                 <a data-toggle="modal" href="#modaledit">  
                                                 <i class="icon-pencil"></i>
                                                 Editar Perfil
                                                 </a>
+
                                             </li>              
+                                            <!-- <li>    </li> -->
                                             <li>
                                                 <a href="#">
                                                 <i class="icon-envelope"></i>
@@ -627,7 +630,6 @@
     <script src="js/jquery.masonry.min.js"></script>
 
 
-
     <script src="js/bootstrap-datepicker.js"></script>            
     <script>
       $(function(){
@@ -635,6 +637,7 @@
         $('#dp_reg').datepicker();     
       });
     </script>    
+
 
     <script src="js/si.files.js"></script>
     <script>
@@ -645,22 +648,30 @@
     <script src="js/base-galeria.js"></script>
 
 
+
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
 
     <script>
         $(function(){            
-
             $('.scroll-pane').jScrollPane(
                 {
-                    showArrows: false,
-                    verticalDragMinHeight: 30,
-                    verticalDragMaxHeight: 200
-                    //horizontalGutter: 10
+                    'showArrows': false,
+                    //horizontalGutter:5,
+                    //verticalGutter:5,
+                    //verticalDragMinHeight: 30,
+                    //verticalDragMaxHeight: 100                    
                 }
             );
+            $('.jspDrag').hide();
+            $('.jspScrollable').mouseenter(function(){
+               $('.jspDrag').stop(true, true).fadeIn('slow');
+            });
+            $('.jspScrollable').mouseleave(function(){
+               $('.jspDrag').stop(true, true).fadeOut('slow');
+            });
         });
     </script>    
-
+    
 </body>
 </html>
