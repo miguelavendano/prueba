@@ -1,3 +1,7 @@
+#R_busqueda .navbar-inner{
+  min-height: 40px;
+} 
+
 #resultado{
   background-color: white;
   border: 1px solid #ccc;
@@ -35,9 +39,3 @@
 #titulo{
   /*background-color: black;*/
 }
-
-
-#R_busqueda .navbar-inner{
-  min-height: 40px;
-} 
-
