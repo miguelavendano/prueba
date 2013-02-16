@@ -3,11 +3,16 @@
   min-height: 40px;
 } 
 
+/*.ubicacion .btn{
+	color: #007E00;
+	font-weight: bold;	
+}*/
+
 #galeria_sitio{
-  	background-color: white;
-  	border: 1px solid #ccc;
+  	background-color: white;  	
   	margin-top: 10px;
   	margin-bottom: 10px;
+  	border: 1px solid #ccc;
   	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -25,6 +30,9 @@
 	height: 100%;
 }
 
+.foto_galeria img:hover{
+	border: 1px solid #00FF00;
+}
 
 .autor{
 	margin: 0 auto;

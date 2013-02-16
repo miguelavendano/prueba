@@ -3,37 +3,37 @@
 
 }
 .redes{
-
 	height: 50px;
-
 }
 
-
 .maps{
-
 	height:400px;
 }
 
 
-
-
 .detalle_sitio{
-
 	height: 320px;
 }
 
 .actividades{
-
 	height: 200px;
 }
 
 #galeria{
-
 	position: absolute;
 	z-index: 100;
 	margin-top: 300px;
 }
 
+.comparte{
+  margin: 0 auto;
+  width: 65%;
+}
+
+.botones-comparte{
+	margin: 0 auto;
+	width: 65%;
+}
 
 
 /************************ PESTAÑA DE IMAGENES ************************/
@@ -61,7 +61,6 @@
 	float: left;	
 	width: 100%;
 	height: 125px;
-
 }
 
 .experiencia .imagen-experiencia .im1{

@@ -11,16 +11,14 @@
 <!-- google maps -->
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-      #map_canvas { height: 100% }
-    </style>
+    
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCgDQaCxGzNVRkJ5HT8tWKcxNAW7DM8ktQ&sensor=true">
     </script>
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
+          center: new google.maps.LatLng(4.15,-73.64),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
@@ -37,7 +35,7 @@
 <!--     <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
     <link href="css/estilos.css" rel="stylesheet">
     <link href="css/estilos_perfil_sitio.css" rel="stylesheet">    
-    <link href="css/estilo-ferro.css" rel="stylesheet">
+    <link href="css/ferrocarril.css" rel="stylesheet">
 
 </head>
 <body onload="initialize()">
@@ -53,13 +51,13 @@
                                 <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
                             <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
                         </div>
-                        <div class="span4">
+                        <div class="span4 busqueda">
                             <form class="navbar-form">
                                 <input type="text" placeholder="A donde quieres ir ?">
-                                <button type="submit" class="btn btn-custom">Buscar</button>
+                                <button type="submit" class="btn btn-azul">Buscar</button>
                             </form>                                 
                         </div>
-                        <div class="span4">                         
+                        <div class="span4 botones">                       
                             <ul class="nav pull-right">
                                 <li class="divider-horizontal"></li>
                                 <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
@@ -69,8 +67,8 @@
                                 <li>
                                     <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
                                 </li>
-                            </ul>                                                                                   
-                        </div                 
+                            </ul>                                         
+                        </div>                 
                       </div>                  
                     </div>                
                   </div>                  
@@ -78,200 +76,208 @@
             </div>
         </div>
     </header>
+    
     <div class="row-fluid"><hr><hr></div>
 
-    <div class="contenido">
+    <section>
 
         <div class="container-fluid">
             <div class="row-fluid">         
-                <div class="span12">   
-                    <div class="span9">                        
-                        <div class="row-fluid">
-                            <h1>Lanzamiento de Parapente</h1>
-                            <div class="container-fluid" id="contenido-black">
-                                 <div class="carrusel_publicidad">    <!--  CARRUSEL PRINCIPAL  -->
-                                    <a href="galeria_sitio.html" class="btn btn-custom" id="galeria">Ver Galeria</a>
-                                    <div id="main-carousel" class="carousel slide">
-                                        <div class="carousel-inner"><!-- Carousel items -->                                    
-                                            <div class="item">
-                                                <img alt="Jaipur" src="imagenes/pub1.png" />
+                <div class="span12"> 
+                    <div class="row-fluid">    
+                        <div class="span9">                        
+                            <div class="row-fluid">
+                                <h1>Lanzamiento de Parapente</h1>
+                                <div class="container-fluid" id="contenido-black">
+                                     <div class="carrusel_publicidad">    <!--  CARRUSEL PRINCIPAL  -->
+                                        <a href="galeria_sitio.html" class="btn btn-azul b-ca" id="galeria">Ver Galeria</a>
+                                        <div id="main-carousel" class="carousel slide">
+                                            <div class="carousel-inner"><!-- Carousel items -->                                    
+                                                <div class="item">
+                                                    <img alt="Jaipur" src="imagenes/pub1.png" />
 
-                                            </div>
-                                            <div class="item">
-                                                <img alt="Jaipur" src="imagenes/pub2.png" />
-                                            </div>
-                                            <div class="item active">
-                                                <img alt="Jaipur" src="imagenes/pub3.png" />
+                                                </div>
+                                                <div class="item">
+                                                    <img alt="Jaipur" src="imagenes/pub2.png" />
+                                                </div>
+                                                <div class="item active">
+                                                    <img alt="Jaipur" src="imagenes/pub3.png" />
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div> 
-                            </div>                           
-                            <div class="row-fluid"><hr></hr></div>
+                                    </div> 
+                                </div>                           
+                                <div class="row-fluid"><hr></hr></div>
 
-                            <h2>Detalles del destino...</h2>
-                            <div class="row-fluid">                                
-                                <div class="span8" id="contenido">
-                                    <div class="detalle_sitio">
-                                        <h4>Descripción</h4>
-                                        <p>Describe <br>
-                                            Describe <br>
-                                            Describe <br>
-                                            Describe <br>
-                                            Describe <br>
-                                            
+                                <h2>Detalles del destino...</h2>
+                                <div class="row-fluid">                                
+                                    <div class="span8" id="contenido">
+                                        <div class="detalle_sitio">
+                                            <h4>Descripción</h4>
+                                            <p>Describe <br>
+                                                Describe <br>
+                                                Describe <br>
+                                                Describe <br>
+                                                Describe <br>
+                                                
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="row-fluid" id="contenido">
+                                            <div class="actividades">
+                                                <p>sub rows</p>
+                                            </div>
+                                        </div><hr>
+
+                                        <div class="row-fluid" id="contenido">
+                                            <a href="#" class="btn btn-verde btn-block"> <h4>Sabes quien te puede traer a este sitio?</h4></a>
+                                        </div>
+                                    </div>                                
+                                </div>
+                                <div class="row-fluid"><hr></hr></div>
+                                <div class="row-fluid">  
+                                    <h2>Ubicación</h2>      
+                                    <div class="maps">                                    
+                                        <div id="map_canvas" style="width:100%; height:100%"></div>                                    
+                                    </div>
+
+                                </div>
+                                <!-- <div class="row-fluid"><hr></hr></div> -->
+
+                                <!-- <h2>Actividad social...</h2> -->
+                            </div>
+                        </div>                   
+                        <div class="span3 ">
+
+                            <div class="row-fluid">
+                                <div class="row-fluid comparte">
+                                    <h3>¡ Comparte !</h3>       
+                                </div>
+                                <div class="botones-comparte">
+                                    <a class="btn btn-verde" data-toggle="dropdown" href="#">He estado aquí</a>                            
+                                
+                                    <a class="btn btn-azul" data-toggle="dropdown" href="#">Quiero estar aquí</a>                            
+                                </div>
+                        
+                            
+                            <div class="row-fluid"><hr></hr></div>
+                            
+                            
+                            <div class="row-fluid" id="contenido">
+                                <div class="row-fluid">
+                                    <div class="redesweb">
+                                        <h3>Contacto</h3>                                
+                                        <p>
+                                            Telefono: 661 71 61 <br>
+                                            Dirección: calle falsa 123 <br>
+                                            Email: parapente123@gmal.com <br>
+
                                         </p>
                                     </div>
                                 </div>
-                                <div class="span4">
-                                    <div class="row-fluid" id="contenido">
-                                        <div class="actividades">
-                                            <p>sub rows</p>
-                                        </div>
-                                    </div><hr>
+                                <div class="row-fluid">
+                                    <!-- <div class="redes"> -->
+                                        <a href="#"><img src="imagenes/64x64/facebook_64x64.png"></a>
+                                        <a href="#"><img src="imagenes/64x64/twitter_64x64.png"></a>
+                                        <a href="#"><img src="imagenes/64x64/google_64x64.png"></a>
+                                        <a href="#"><img src="imagenes/64x64/blogger_64x64.png"></a>
 
-                                    <div class="row-fluid" id="contenido">
-                                        <a href="#" class="btn btn-custom3"> <h4>Sabes quien te puede traer a este sitio?</h4></a>
-                                    </div>
-                                </div>                                
+                                    <!-- </div> -->
+                                </div>
+                                                     
                             </div>
+
                             <div class="row-fluid"><hr></hr></div>
-                            <div class="row-fluid">  
-                                <h2>Ubicación</h2>      
-                                <div class="maps">                                    
-                                    <div id="map_canvas" style="width:100%; height:100%"></div>                                    
-                                </div>
 
-                            </div>
-                            <!-- <div class="row-fluid"><hr></hr></div> -->
-
-                            <!-- <h2>Actividad social...</h2> -->
-                        </div>
-                    </div>                   
-                    <div class="span3">
-                        <div class="row-fluid">
-                            <h3>Comparte !</h3>
-                            <a class="btn btn-custom2" data-toggle="dropdown" href="#">He estado aqui!</a>
-                            <a class="btn btn-custom" data-toggle="dropdown" href="#">Quiero estar aqui!</a>
-                            <!-- </div> -->
-                        </div>
-                        
-                        <div class="row-fluid"><hr></hr></div>
-                        
-                        
-                        <div class="row-fluid" id="contenido">
                             <div class="row-fluid">
-                                <div class="redesweb">
-                                    <h3>Contacto</h3>                                
+                                <div class="seguidores">                            
+                                    <h3><a href="#seguidores">Visitantes</a></h3>
                                     <p>
-                                        Telefono: 661 71 61 <br>
-                                        Dirección: calle falsa 123 <br>
-                                        Email: parapente123@gmal.com <br>
-
-                                    </p>
-                                </div>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                </div> <!-- seguidores -->                        
                             </div>
+
+                            <div class="row-fluid"><hr></hr></div>
+
                             <div class="row-fluid">
-                                <!-- <div class="redes"> -->
-                                    <a href="#"><img src="imagenes/64x64/facebook_64x64.png"></a>
-                                    <a href="#"><img src="imagenes/64x64/twitter_64x64.png"></a>
-                                    <a href="#"><img src="imagenes/64x64/google_64x64.png"></a>
-                                    <a href="#"><img src="imagenes/64x64/blogger_64x64.png"></a>
 
-                                <!-- </div> -->
+                                <div class="seguidores">                            
+                                    <h3><a href="#seguidores">Quieren visitarlo</a></h3>
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/andrea.jpg"/>
+                                        <a href="#/Colombia">Andrea Rojas</a>
+                                    </p>                                                    
+                                    <p>
+                                        <img src="img/julian.jpg"/>
+                                        <a href="#/Colombia">Julian Varela</a>
+                                    </p>                                                    
+                                </div> <!-- seguidores -->   
+
                             </div>
-                                                 
-                        </div>
-
-                        <div class="row-fluid"><hr></hr></div>
-
-                        <div class="row-fluid">
-                            <div class="seguidores">                            
-                                <h3><a href="#seguidores">Visitantes</a></h3>
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                            </div> <!-- seguidores -->                        
-                        </div>
-
-                        <div class="row-fluid"><hr></hr></div>
-
-                        <div class="row-fluid">
-
-                            <div class="seguidores">                            
-                                <h3><a href="#seguidores">Quieren visitarlo</a></h3>
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/andrea.jpg"/>
-                                    <a href="#/Colombia">Andrea Rojas</a>
-                                </p>                                                    
-                                <p>
-                                    <img src="img/julian.jpg"/>
-                                    <a href="#/Colombia">Julian Varela</a>
-                                </p>                                                    
-                            </div> <!-- seguidores -->   
-
-                        </div>
-                    </div>  
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="row-fluid"><hr></hr></div>
 
-        <div id="ferrocarril"> 
+        <ferrocarril> 
             <div class="container-fluid">  
                 <div class="row-fluid list_carousel responsive">
                         <ul id="foo">
@@ -281,9 +287,9 @@
                                         <i class="icon-music"></i>
                                         Los Capachos
                                     </h5>
-                                </div>                            
+                                </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/acacias-meta.jpg">   
                                 </div>                        
                             </li>   
                             <li>
@@ -294,18 +300,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
-                                </div>                        
-                            </li>   
-                            <li>
-                                <div class="ferro-titulo">       
-                                    <h5>
-                                        <i class="icon-music"></i>
-                                        Los Capachos
-                                    </h5>
-                                </div>
-                                <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/amanecer_llanero.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -316,7 +311,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/cabalgata.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -327,7 +322,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/cano-cristales.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -338,7 +333,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/coleo.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -349,7 +344,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/hotel_llano.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -360,7 +355,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/humadea.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -371,7 +366,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/joropo.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -382,7 +377,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/llanero.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -393,7 +388,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/mundial_coleo.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -404,7 +399,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/rafting-rio-savegre.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -415,22 +410,30 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/bailarines-joropo.jpg">   
                                 </div>                        
                             </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/coleo-casanare.jpg">   
+                                </div>                        
+                            </li>                            
                         </ul>                    
                         <!-- <div id="paginas" class="paginas"></div>  -->
                 </div>                
             </div>                            
             <a id="prev" class="prev" href="#"></a>
             <a id="next" class="next" href="#"></a>
-        </div> <!-- ferrocarril -->
+        </ferrocarril>
 
-
-        <div class="row-fluid"><hr/></div>
-
-        
-    </div>
+        <div class="row-fluid"><hr/></div>        
+    </section>
 
     <footer>
         <div class="container-fluid">

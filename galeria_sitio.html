@@ -15,6 +15,7 @@
 
 </head>
 <body>
+
     <header>    
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">          
@@ -26,35 +27,45 @@
                                 <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
                             <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
                         </div>
-                        <div class="span4">
+
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>  
+
+                        <div class="span4 busqueda">
                             <form class="navbar-form">
                                 <input type="text" placeholder="A donde quieres ir ?">
-                                <button type="submit" class="btn btn-custom">Buscar</button>
+                                <button type="submit" class="btn btn-azul">Buscar</button>
                             </form>                                 
                         </div>
-                        <div class="span4">                         
-                            <ul class="nav pull-right">
-                                <li class="divider-horizontal"></li>
-                                <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
-                                <li class="divider-horizontal"></li>
-                                <li><a id="a-nav" href="#">Ingresar</a></li>
-                                <li class="divider-horizontal"></li>
-                                <li><a id="a-nav" href="#">Registrarse</a></li>
-                            </ul>                                                                                   
-                        </div                 
+
+                        <div class="nav-collapse collapse" id="nav-collapse">
+                            <div class="span4 botones">
+                                <ul class="nav pull-right">
+                                    <li class="divider-horizontal"></li>
+                                    <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
+                                    <li class="divider-horizontal"></li>
+                                    <li><a id="a-nav" href="#">Ingresar</a></li>
+                                    <li class="divider-horizontal"></li>
+                                    <li>
+                                        <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
+                                    </li>
+                                </ul>                  
+                            </div>
+                        </div>
+
                       </div>                  
                     </div>                
                   </div>                  
                 </div>
             </div>
         </div>
-
-
     </header>
 
-	<div class="contenido" id="Galeria">
-
-        <div class="row-fluid"><hr/></div>
+	<section id="Galeria">
+        
         <div class="row-fluid">
             <div class="span12">
                 <div class="row-fluid">
@@ -63,9 +74,9 @@
                             <h2>Nombre del sitio</h2>
                         </a>                        
                     </div>
-                    <div class="span4">
+                    <div class="span4 ubicacion">
                         <button class="btn">
-                            <i class="icon-globe"></i>
+                            <i class="icon-globe"></i>          
                             Donde se encuentra
                         </button>
                     </div>
@@ -73,7 +84,7 @@
             </div>
         </div>
 
-        <div class="row-fluid" id="filtro-fotos">
+        <div class="row-fluid">
             <div class="navbar navbar-inverse">
                 <div class="navbar-inner">
                     <ul class="nav">
@@ -404,7 +415,7 @@
 
 
 		</div> <!-- /container -->
-	</div>
+	</section>
 
 	<footer>
 		<div class="container-fluid">
@@ -425,12 +436,25 @@
     
 
     <script src="js/jquery.js"></script>        
+    <script src="js/jquery-1.8.2.min.js"></script>
+
     <script src="js/bootstrap-dropdown.js"></script>
     <script>
         $(function(){            
-            $('#filtro-fotos').dropdown();
+            $('#topbar').dropdown();
         });
     </script>    
-    
+<!--    
+    <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
+
+    <script>
+        $(function(){            
+            $('.collapse').collapse();
+        });
+    </script>    
+    -->
+<!--
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+-->
 </body>
 </html>

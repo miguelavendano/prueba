@@ -12,16 +12,14 @@
 <!-- google maps -->
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-      #map_canvas { height: 100% }
-    </style>
+
     <script type="text/javascript"
       src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCgDQaCxGzNVRkJ5HT8tWKcxNAW7DM8ktQ&sensor=true">
     </script>
     <script type="text/javascript">
       function initialize() {
         var mapOptions = {
-          center: new google.maps.LatLng(-34.397, 150.644),
+          center: new google.maps.LatLng(4.15,-73.64),
           zoom: 8,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
@@ -37,8 +35,9 @@
 
     <link href="css/estilos.css" rel="stylesheet">    
     <link href="css/estilos_perfil_empresa.css" rel="stylesheet"> 
-    <link href="css/estilo-ferro.css" rel="stylesheet">    
+    <link href="css/ferrocarril.css" rel="stylesheet">    
     <link href="css/resultado_busqueda.css" rel="stylesheet">    
+
 </head>
 <body onload="initialize()">
 
@@ -53,13 +52,13 @@
                                 <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
                             <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
                         </div>
-                        <div class="span4">
+                        <div class="span4 busqueda">
                             <form class="navbar-form">
                                 <input type="text" placeholder="A donde quieres ir ?">
-                                <button type="submit" class="btn btn-custom">Buscar</button>
+                                <button type="submit" class="btn btn-azul">Buscar</button>
                             </form>                                 
                         </div>
-                        <div class="span4">                         
+                        <div class="span4 botones">                       
                             <ul class="nav pull-right">
                                 <li class="divider-horizontal"></li>
                                 <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
@@ -69,38 +68,33 @@
                                 <li>
                                     <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
                                 </li>
-                            </ul>                                                                                   
-                        </div                 
+                            </ul>                                         
+                        </div>                 
                       </div>                  
                     </div>                
                   </div>                  
                 </div>
             </div>
         </div>
-
-
     </header>
 
-    <div class="contenido">
+    <section>
 
-        <div class="container-fluid">
-            <div class="row-fluid">   
-                <div class="span9">
-                    <h1>Lanzamiento de Parapente</h1> 
-                </div>
-                <div class="span3">
-                    <a class="btn btn-custom4" data-toggle="dropdown" href="#">Confio en esta empresa</a>
-                </div>
-
-
+        <div class="row-fluid">   
+            <div class="span9">
+                <h1>Lanzamiento de Parapente</h1> 
+            </div>
+            <div class="span3">
+                <a class="btn btn-custom4" data-toggle="dropdown" href="#">Confio en esta empresa</a>
             </div>
         </div>
-        <!-- <div class="row-fluid"><hr></hr></div> -->
+
+        
 
         <div class="container-fluid">
             <div class="row-fluid">   
                 <div class="carrusel_publicidad">    <!--  CARRUSEL PRINCIPAL  -->
-                    <a href="#" class="btn btn-custom2" id="galeria">Ver Galeria</a>
+                    <a href="#" class="btn btn-verde b-cv" id="galeria">Ver Galeria</a>
                     <div id="main-carousel" class="carousel slide">
                         <div class="carousel-inner"><!-- Carousel items -->                                    
                             <div class="item">
@@ -124,33 +118,35 @@
         <div class="container-fluid">
             <h2>Descipción de esta empresa </h2>
             <div class="row-fluid">   
-                <div class="span6">
-                    <div class="row-fluid" id="contenido">
-                        <div class="actividades">
-                            <p>sub rows</p>
-                        </div>
-                    </div>
-                    <div class="row-fluid" id="contenido">
-                        <a href="#"><img src="imagenes/64x64/facebook_64x64.png"></a>
-                        <a href="#"><img src="imagenes/64x64/twitter_64x64.png"></a>
-                        <a href="#"><img src="imagenes/64x64/google_64x64.png"></a>
-                        <a href="#"><img src="imagenes/64x64/blogger_64x64.png"></a>
-                        <a href="#"><img src="imagenes/64x64/yahoo_64x64.png"></a>                        
-                        <a href="#"><img src="imagenes/64x64/linkedin_64x64.png"></a>
-                        <a href="#"><img src="imagenes/64x64/delicious_64x64.png"></a>
+                <div class="span12">
+                    <div class="row_fluid">
+                        <div class="span6">
+                            <div class="row-fluid" id="contenido">
+                                <div class="actividades">
+                                    <p>sub rows</p>
+                                </div>
+                            </div>
+                            <div class="row-fluid" id="contenido">
+                                <a href="#"><img src="imagenes/64x64/facebook_64x64.png"></a>
+                                <a href="#"><img src="imagenes/64x64/twitter_64x64.png"></a>
+                                <a href="#"><img src="imagenes/64x64/google_64x64.png"></a>
+                                <a href="#"><img src="imagenes/64x64/blogger_64x64.png"></a>
+                                <a href="#"><img src="imagenes/64x64/yahoo_64x64.png"></a>                        
+                                <a href="#"><img src="imagenes/64x64/linkedin_64x64.png"></a>
+                                <a href="#"><img src="imagenes/64x64/delicious_64x64.png"></a>
+                            </div>
+                            <div class="row-fluid" id="contenido">
+                                <a href="#" class="btn btn-verde btn-block"> <h4>Contador de confianza</h4></a>
+                            </div>
+                        </div>                               
 
-                    </div>
-
-                    <div class="row-fluid" id="contenido">
-                        <a href="#" class="btn btn-custom3"> <h4>Contador de confianza</h4></a>
-                    </div>
-                </div>                               
-
-                <div class="span6">
-                    <h3>Ubicación</h3>  
-                    <div class="detalle_sitio">
-                        <div class="maps">                                    
-                            <div id="map_canvas"></div>                                    
+                        <div class="span6">
+                            <h3>Ubicación</h3>  
+                            <div class="detalle_sitio">
+                                <div class="maps">                 
+                                    <div id="map_canvas"></div>   
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,7 +155,7 @@
 
         <div class="row-fluid"><hr/></div>
 
-        <div id="ferrocarril"> 
+        <ferrocarril> 
             <div class="container-fluid">  
                 <div class="row-fluid list_carousel responsive">
                         <ul id="foo">
@@ -169,9 +165,9 @@
                                         <i class="icon-music"></i>
                                         Los Capachos
                                     </h5>
-                                </div>                            
+                                </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/acacias-meta.jpg">   
                                 </div>                        
                             </li>   
                             <li>
@@ -182,18 +178,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
-                                </div>                        
-                            </li>   
-                            <li>
-                                <div class="ferro-titulo">       
-                                    <h5>
-                                        <i class="icon-music"></i>
-                                        Los Capachos
-                                    </h5>
-                                </div>
-                                <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/amanecer_llanero.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -204,7 +189,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/cabalgata.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -215,7 +200,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/cano-cristales.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -226,7 +211,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/coleo.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -237,7 +222,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/hotel_llano.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -248,7 +233,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/humadea.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -259,7 +244,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/joropo.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -270,7 +255,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/llanero.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -281,7 +266,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/mundial_coleo.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -292,7 +277,7 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/rafting-rio-savegre.jpg">   
                                 </div>                        
                             </li>
                             <li>
@@ -303,17 +288,27 @@
                                     </h5>
                                 </div>
                                 <div class="img-ferro">
-                                    <img src="imagenes/capachos.jpg">   
+                                    <img src="imagenes/bailarines-joropo.jpg">   
                                 </div>                        
                             </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/coleo-casanare.jpg">   
+                                </div>                        
+                            </li>                            
                         </ul>                    
-
                         <!-- <div id="paginas" class="paginas"></div>  -->
                 </div>                
             </div>                            
             <a id="prev" class="prev" href="#"></a>
             <a id="next" class="next" href="#"></a>
-        </div> <!-- ferrocarril -->
+        </ferrocarril>
 
         <div class="row-fluid"><hr/></div>
 
@@ -691,7 +686,7 @@
         
         <div class="row-fluid"><hr></hr></div>
 
-    </div>
+    </section>
 
 
     <footer>

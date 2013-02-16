@@ -11,75 +11,55 @@
     <link href="css/bootstrap-responsive.css" rel="stylesheet">        
     <link href="css/estilos.css" rel="stylesheet">
     <link href="css/estilos_index.css" rel="stylesheet">
-    <link href="css/Carousel-2.0.0.css" rel="stylesheet" type="text/css" />
-
-
-    <!-- Elementos para el carrusel --> 
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/bootstrap-transition.js"></script>
-    <script src="js/lazy-bootstrap-carousel.js"></script>
-    <script src="js/base-carrusel.js"></script>
-
-    <!-- Elementos para el ferrocaril de imagenes -->   
-
-    <script src="js/jsCarousel-2.0.0.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#carouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
-        });               
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('#micarouselh').jsCarousel({ onthumbnailclick: function(src) { alert(src); }, autoscroll: true, circular: true, masked: false, itemstodisplay: 4, orientation: 'h' });
-        });               
-    </script>
+    <link href="css/ferrocarril.css" rel="stylesheet">    
 
 </head>
-<body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendred="true">
+<body>
 
     <header>    
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">          
                 <div class="container-fluid ">
-                    <div class="row-fluid">
-                        <div class="span12">
-                            <div class="row-fluid">
-                                <div class="span4">                         
-                                        <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
-                                    <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
-                                </div>
-                                <div class="span4">
-                                    <form class="navbar-form">
-                                        <input type="text" placeholder="A donde quieres ir ?">
-                                        <button type="submit" class="btn btn-primary">Buscar</button>
-                                    </form>                                 
-                                </div>
-                                <div class="span4">                         
-                                    <ul class="nav pull-right">
-                                        <li class="divider-horizontal"></li>
-                                        <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
-                                        <li class="divider-horizontal"></li>
-                                        <li><a id="a-nav" href="#">Ingresar</a></li>            
-                                        <li class="divider-horizontal"></li>
-                                        <li><a id="a-nav" href="#">Registrarse</a></li>                             
-                                    </ul>                                                                                   
-                                </div>   
-                            </div>
+                  <div class="row-fluid">
+                    <div class="span12">
+                      <div class="row-fluid">
+                        <div class="span4">                         
+                                <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
+                            <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
                         </div>
-                    </div>
+                        <div class="span4 busqueda">
+                            <form class="navbar-form">
+                                <input type="text" placeholder="A donde quieres ir ?">
+                                <button type="submit" class="btn btn-azul">Buscar</button>
+                            </form>                                 
+                        </div>
+                        <div class="span4 botones">                       
+                            <ul class="nav pull-right">
+                                <li class="divider-horizontal"></li>
+                                <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
+                                <li class="divider-horizontal"></li>
+                                <li><a id="a-nav" href="#">Ingresar</a></li>
+                                <li class="divider-horizontal"></li>
+                                <li>
+                                    <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
+                                </li>
+                            </ul>                                         
+                        </div>                 
+                      </div>                  
+                    </div>                
+                  </div>                  
                 </div>
             </div>
         </div>
     </header>
 
-    <div class="contenido">
+    <section>
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="span12">                
                     <br>    
-                    <div class="row-fluid"><hr></div>
+                    
                     <div class="row-fluid">         
-
                         <div class="ingresar">
                             <form>
                               <fieldset>
@@ -126,72 +106,168 @@
                         </a>
                     </div>                    
                 
-                    <!-- <div class="ferro">    FERROCARIL DE IMAGENES -->
-                    <div class="row-fluid">
-                        <div class="span12">            
-                            <div class="row-fluid" id="micarouselh">
 
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_1.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>                
-                                </div>   
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_2.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>
-                                </div>   
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_3.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>
-                                </div>                    
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_4.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>
-                                </div>   
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_5.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>
-                                </div>   
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_6.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>                                                                    
-                                </div>   
-                                <div class="span3">
-                                    <div class="thumbnail-titulo">Titulo</div>
-                                    <img alt="" src="images/img_7.jpg" /><br />
-                                    <div>
-                                        <p class="thumbnail-text">Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text Image Text</p>
-                                    </div>
-                                </div>   
+        <ferrocarril> 
+            <div class="container-fluid">  
+                <div class="row-fluid list_carousel responsive">
+                        <ul id="foo">
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/acacias-meta.jpg">   
+                                </div>                        
+                            </li>   
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/amanecer_llanero.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/cabalgata.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/cano-cristales.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/coleo.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/hotel_llano.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/humadea.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/joropo.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/llanero.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/mundial_coleo.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/rafting-rio-savegre.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/bailarines-joropo.jpg">   
+                                </div>                        
+                            </li>
+                            <li>
+                                <div class="ferro-titulo">       
+                                    <h5>
+                                        <i class="icon-music"></i>
+                                        Los Capachos
+                                    </h5>
+                                </div>
+                                <div class="img-ferro">
+                                    <img src="imagenes/coleo-casanare.jpg">   
+                                </div>                        
+                            </li>                            
+                        </ul>                    
+                        <!-- <div id="paginas" class="paginas"></div>  -->
+                </div>                
+            </div>                            
+            <a id="prev" class="prev" href="#"></a>
+            <a id="next" class="next" href="#"></a>
+        </ferrocarril>> <!-- ferrocarril -->
 
-
-                            </div>
-                        </div>                        
-                    </div>
                 </div>    
 
             </div>
         </div>
-    </div>
+    </section>
     
-
     <footer>
         <div class="container-fluid">
             <div class="row-fluid">
@@ -208,7 +284,42 @@
             </div>          
         </div>
     </footer>   
-<script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script> 
+    
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
 
+
+    <!-- ....Elementos para el ferrocaril de imagenes.... -->   
+        <!-- include jQuery + carouFredSel plugin -->
+    <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.1.0-packed.js"></script>
+        <!-- optionally include helper plugins -->
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" language="javascript" src="js/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+
+    <script type="text/javascript" language="javascript">
+            $(function() {
+                //  Responsive layout, resizing the items
+                $('#foo').carouFredSel({
+                    responsive: true,
+                    prev: '#prev',
+                    next: '#next',                  
+                    //width: '100%',                    
+                    pagination: "#paginas",
+                    mousewheel: true,
+                    swipe: {
+                        onMouse: true,
+                        onTouch: true
+                    },                    
+                    items: {
+                        width: 300,
+                        visible: {
+                            min: 1,
+                            max: 4                            
+                        }
+                    }
+                });
+            });
+    </script>
 </body>
 </html>
