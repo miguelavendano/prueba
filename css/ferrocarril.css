@@ -4,9 +4,9 @@
 }
 .list_carousel{
 	background-color: #ccc;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;		
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;		
 }
 .list_carousel ul{
 	margin: 0;
@@ -40,6 +40,7 @@
  	padding-bottom: 5px;
  	border-bottom: 1px solid #ccc;
 }
+
 .list_carousel .img-ferro{
 	width: auto;
 	height: 150px;

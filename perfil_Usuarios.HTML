@@ -36,10 +36,10 @@
                             <ul class="nav pull-right">
                                 <li class="divider-horizontal"></li>
                                 <li class="active">
-                                    <a id="a-nav" href="#">Compartir Experiencia</a>
+                                    <a data-toggle="modal" id="a-nav" href="#modalexpe">Compartir Experiencia</a>
                                 </li>
                                 <li>
-                                    <a id="a-nav" href="#">Ingresar</a>
+                                    <a data-toggle="modal" href="#modallogin" id="a-nav">Ingresar</a>
                                 </li>
                                 <li>
                                     <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
@@ -381,8 +381,15 @@
                         <div class="control-group">
                           <label class="control-label" for="imper">Imagen de perfil: </label>
                           <div class="controls">
-                            <input type="file" class="input-file" id="imper" ></input>
+                            <label class="cabinet">
+                              <i class="icon-camera-retro icon-2x"></i>
+                              Cargar
+                              <input type="file" class="file" />
+                            </label>
                           </div>
+                          <!--<div class="controls">
+                            <input type="file" class="input-file" id="imper" ></input>
+                          </div> -->
                         </div>        
                         <div class="control-group">
                           <label class="control-label" for="nom">Nombres: </label>
