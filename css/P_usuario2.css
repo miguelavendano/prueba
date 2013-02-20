@@ -71,11 +71,10 @@
 	margin-bottom: 10px;
 	float: left;			
 	margin: 0 auto;
-	border: 1px solid blue;
 }
 
 
-.experiencia .imagen-experiencia img{
+.experiencia .im_exp img{
 	margin: 0 auto;
 	height: 100%;
 }
