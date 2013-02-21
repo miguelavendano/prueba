@@ -31,12 +31,11 @@
 <!-- *********************** -->
 
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">    
     <link href="css/estilos.css" rel="stylesheet">    
     <link href="css/estilos_perfil_empresa.css" rel="stylesheet"> 
-    <link href="css/ferrocarril.css" rel="stylesheet">    
-    <link href="css/resultado_busqueda.css" rel="stylesheet">    
+    <link href="css/estilos_ferrocarril.css" rel="stylesheet">    
+    <link href="css/estilos_resultado_busqueda.css" rel="stylesheet">    
 
 </head>
 <body onload="initialize()">
@@ -488,7 +487,7 @@
                                                             
                                                         </div>                            
                                                     </div>
-                                                </div>                                                                                                
+                                                </div>                 
              
                                             </div>                                             
 
@@ -496,36 +495,33 @@
                                         </div>  <!-- pestaña 1 -->
                                     
                                         <div class="tab-pane" id="2"> 
+
                                             <div class="row-fluid experiencia">
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
+                                                <div class="span3 im_exp">
+                                                    <img src="imagenes/acacias-meta.jpg" />    
                                                 </div>
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Cristalinas</h4></a>
+                                                <div class="span9 info_exp">                     
+                                                    <a href="#"><h4>Acacias</h4></a>
                                                     <p>
                                                         Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
                                                         Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
                                                         <a href="#">leer mas...</a>
-                                                    </p>                                                                    
+                                                    </p>  
                                                 </div>        
-                                            </div>                                        
-                                            <div class="row-fluid experiencia">               
-                                                <div class="span3 imagen-experiencia">                                                
-                                                    <img class="im1" src="img/Tulipanes.jpg" />
-                                                    <img class="im2" src="img/Desierto.jpg" />
-                                                    <img class="im3" src="img/Faro.jpg" />                                                
-                                                </div>                                            
-                                                <div class="span9 info_ex">                                                
-                                                    <a href="#"><h4>Rio El Borrachero</h4></a>
+                                            </div> 
+                                            <div class="row-fluid experiencia">
+                                                <div class="span3 im_exp">
+                                                    <img src="imagenes/cano-cristales.jpg" />    
+                                                </div>
+                                                <div class="span9 info_exp">                     
+                                                    <a href="#"><h4>Caño Cristales</h4></a>
                                                     <p>
                                                         Este sera el parrafo descriptivo de la experiencia en el sitio en mencion.......<br>
                                                         Este parrafo contendra unos 100 caracteres como minimo (puden ser mas).<br>
                                                         <a href="#">leer mas...</a>
-                                                    </p>                                                                    
-                                                </div>    
-                                            </div>
+                                                    </p>  
+                                                </div>        
+                                            </div> 
 
                                         </div>   <!-- pestaña 2 -->
 
@@ -690,18 +686,7 @@
 
 
     <footer>
-
-
         <div class="container-fluid">
-
-
-        <div class="row-fluid">
-            
-          
-            
-            
-            
-        </div>
             <div class="row-fluid">
                 <div class="span12">
                     <div class="row-fluid">
@@ -715,20 +700,24 @@
                 </div>
             </div>          
         </div>
-
-
     </footer>   
 
-    
+
+
+    <script src="js/bootstrap-modal.js"></script>
     <script src="js/jquery.js"></script>   
     <script src="js/jquery-1.8.2.min.js"></script>    
     <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- Elementos para el carrusel --> 
     <script src="js/bootstrap-transition.js"></script>
-    <script src="js/lazy-bootstrap-carousel.js"></script>
-    <script src="js/base-carrusel.js"></script>
-
+    <script src="js/lazy-bootstrap-carousel.js"></script>    
+    <script type="text/javascript" language="javascript">    
+        $(function(){
+            $('.carousel').carousel({interval:3000});
+        });
+    </script>
 
     <!-- ....Elementos para el ferrocaril de imagenes.... -->   
         <!-- include jQuery + carouFredSel plugin -->

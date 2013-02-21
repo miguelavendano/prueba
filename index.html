@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>  ODIN - Turismo social</title>
@@ -7,12 +7,11 @@
     <link href="css/bootstrap-responsive.css" rel="stylesheet">        
     <link href="css/estilos.css" rel="stylesheet">
     <link href="css/estilos_index.css" rel="stylesheet">
-    <link href="css/ferrocarril.css" rel="stylesheet">    
-
+    <link href="css/estilos_modal.css" rel="stylesheet" />
+    <link href="css/estilos_ferrocarril.css" rel="stylesheet">    
+    <link href="css/estilos_estilo_modal.css" rel="stylesheet" />
     <link href="css/datepicker.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/estilo_modal.css" rel="stylesheet" />
-
 </head>
 <body>
 
@@ -461,7 +460,7 @@
     <script src="js/bootstrap.min.js"></script>  <!--modal-->    
     <script src="js/jquery.masonry.min.js"></script>
 
-
+    <!--Calendario-->
     <script src="js/bootstrap-datepicker.js"></script>            
     <script>
       $(function(){
@@ -470,20 +469,18 @@
       });
     </script>    
 
-
+    <!--Boton cargar imagen-->
     <script src="js/si.files.js"></script>
     <script>
        SI.Files.stylizeAll();    
     </script>
 
     <!-- Elementos para el carrusel --> 
-    <script src="js/jquery-1.8.2.min.js"></script>
     <script src="js/bootstrap-transition.js"></script>
-    <script src="js/lazy-bootstrap-carousel.js"></script>
-    
+    <script src="js/lazy-bootstrap-carousel.js"></script>    
     <script type="text/javascript" language="javascript">    
         $(function(){
-            $('.carousel').carousel({interval:3000});
+            $('.carousel').carousel();
         });
     </script>
 
