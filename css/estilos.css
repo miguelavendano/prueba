@@ -68,14 +68,12 @@ section{
 }
 .seguidores h3{	
 	margin: 0px;
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
 }
 .seguidores p{	
 	padding-left: 15px;	
 	height: 55px;
  	overflow: hidden;
-
 }
 .seguidores img{
 	width: 55px;

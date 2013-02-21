@@ -29,9 +29,9 @@
 .comentarios{	
 	padding-left: 15px;
 	padding-right: 15px;
-}
-.comentarios .com_usu{
 	border: 1px solid red;
+	height: 425px;
+	overflow: auto;
 }
 .comentarios .im_usu{	
 	width: 48px;
