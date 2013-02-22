@@ -40,38 +40,49 @@
 </head>
 <body onload="initialize()">
 
-    <header>    
+    <header>
         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">          
+            <div class="navbar-inner">
                 <div class="container-fluid ">
                   <div class="row-fluid">
                     <div class="span12">
                       <div class="row-fluid">
-                        <div class="span4">                         
+                        <div class="span4">
                             <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
-                            <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
+                            <!-- <a class="brand" href="#">ODIN-Turismo social</a> -->
                         </div>
+
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>  
+
                         <div class="span4 busqueda">
                             <form class="navbar-form">
                                 <input type="text" placeholder="A donde quieres ir ?">
                                 <button type="submit" class="btn btn-azul">Buscar</button>
-                            </form>                                 
+                            </form>
                         </div>
-                        <div class="span4 botones">                       
-                            <ul class="nav pull-right">
-                                <li class="divider-horizontal"></li>
-                                <li class="active"><a id="a-nav" href="#">Compartir Experiencia</a></li>                               
-                                <li class="divider-horizontal"></li>
-                                <li><a id="a-nav" href="#">Ingresar</a></li>
-                                <li class="divider-horizontal"></li>
-                                <li>
-                                    <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
-                                </li>
-                            </ul>                                         
-                        </div>                 
-                      </div>                  
-                    </div>                
-                  </div>                  
+
+                        <div class="nav-collapse collapse" id="nav-collapse">
+                            <div class="span4 botones">
+                                <ul class="nav pull-right">
+                                    <li class="active">
+                                        <a data-toggle="modal" id="a-nav" href="#modalexpe">Compartir Experiencia</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="#modallogin" id="a-nav">Ingresar</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
+                                    </li>
+                                </ul>                  
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -489,6 +500,7 @@
             });
     </script>
 
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
 
 
 </body>

@@ -1,172 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html lang="en-US">
 <head>
-	<meta charset="utf-8">
-	<title>  ODIN - Turismo social</title>
-    <link href="css/bootstrap.css" rel="stylesheet">    
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">        
-    <link href="css/estilos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Perfil de Usuario</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />    
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" /> 
+    
+    <link href="css/estilos.css" rel="stylesheet" />
+    <link href="css/estilos_perfil_usuario.css" rel="stylesheet" />    
     <link href="css/estilos_modal.css" rel="stylesheet" />
+
     <link href="css/datepicker.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />    
+    <link href="css/jquery.jscrollpane.css" rel="stylesheet" />        
 </head>
-<body>
-  
-    <header>    
+<body>  
+
+    <header>
         <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">          
+            <div class="navbar-inner">
                 <div class="container-fluid ">
                   <div class="row-fluid">
                     <div class="span12">
                       <div class="row-fluid">
-                        <div class="span4">                         
+                        <div class="span4">
                             <a class="brand" href="#"> <img src="imagenes/Odin logo2.png"></a>
-                            <!-- <a class="brand" href="#">ODIN-Turismo social</a>                   -->
+                            <!-- <a class="brand" href="#">ODIN-Turismo social</a> -->
                         </div>
+
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target="#nav-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>  
+
                         <div class="span4 busqueda">
                             <form class="navbar-form">
                                 <input type="text" placeholder="A donde quieres ir ?">
                                 <button type="submit" class="btn btn-azul">Buscar</button>
-                            </form>                                 
+                            </form>
                         </div>
-                        <div class="span4 botones">                       
-                            <ul class="nav pull-right">
-                                <li class="divider-horizontal"></li>
-                                <li class="active">
-                                    <a data-toggle="modal" id="a-nav" href="#modalexpe">Compartir Experiencia</a>
-                                </li>
-                                <li>
-                                    <a data-toggle="modal" href="#modallogin" id="a-nav">Ingresar</a>
-                                </li>
-                                <li>
-                                    <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
-                                </li>
-                            </ul>                                         
-                        </div>                 
-                      </div>                  
-                    </div>                
-                  </div>                  
+
+                        <div class="nav-collapse collapse" id="nav-collapse">
+                            <div class="span4 botones">
+                                <ul class="nav pull-right">
+                                    <li class="active">
+                                        <a data-toggle="modal" id="a-nav" href="#modalexpe">Compartir Experiencia</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="#modallogin" id="a-nav">Ingresar</a>
+                                    </li>
+                                    <li>
+                                        <a data-toggle="modal" href="#modalregistro" id="a-nav">Registrarse</a>
+                                    </li>
+                                </ul>                  
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- registrarse-->
-    <div class="container">
+    <section>
 
-      <div id="modalregistro" class="modal hide fade" style="display: none;">    
-        <div class="modal-header">
-          <a class="close" data-dismiss="modal">×</a>
-            <h3>Registrarse</h3>
-        </div>
-
-        <div class="modal-body">
-            <form class="form-horizontal">
-                <div class="control-group">
-                  <label class="control-label" for="nom">Nombres: </label>
-                  <div class="controls">
-                    <input type="text" class="input-xlarge" id="nom">             
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="ape">Apellidos: </label>
-                  <div class="controls">
-                    <input type="text" class="input-xlarge" id="ape">             
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="mail">Email: </label>
-                  <div class="controls">
-                    <input type="text" class="input-xlarge" id="mail">            
-                  </div>
-                </div>       
-                <div class="control-group">
-                  <label class="control-label" for="genero">Genero: </label>
-                    <div class="controls">
-                      <label class="radio"> 
-                        <input type="radio" id="genero" value="option1" name="opR">
-                          Masculino
-                      </label>
-                      <label class="radio"> 
-                        <input type="radio" id="genero" value="option2" name="opR">
-                          Femenino
-                      </label>            
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="row-fluid">
                     </div>
                 </div>
-                <div class="control-group">
-                  <label class="control-label">Fecha de Nacimiento: </label>
-                    <div class="controls">
-                      <div class="input-append date" id="dp" data-date="12/02/2013" data-date-format="dd-mm-yyyy">
-                        <input class="span2" size="16" value="12/02/2013" readonly="readonly" type="text">
-                        <span class="add-on"><i class="icon-calendar"></i></span>
-                      </div>
+            </div>          
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="row-fluid">
+                        <div class="span6">
+                            <p class="color_p2">&copy; Company 2012</p>
+                        </div>
+                        <div class="span6">
+                            <p class="color_p3">&copy; Company 2012</p>
+                        </div>
                     </div>
                 </div>
-                <div class="control-group">
-                  <label class="control-label" for="nom">Contraseña: </label>
-                  <div class="controls">
-                    <input type="password" class="span2" id="pass">              
-                    <span class="help-inline">minimo 6 caracteres entre letras y números</span>      
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="nom">Confirma tu Contraseña: </label>
-                  <div class="controls">
-                    <input type="password" class="span2" id="pass2">                
-                  </div>
-                </div>
-            </form>          
+            </div>          
         </div>
+    </footer>   
 
-        <div class="modal-footer">
-          <a href="#" class="btn btn-success">Guardar Cambios</a>
-          <a href="#" class="btn btn-primary" data-dismiss="modal">Cerrar</a>
-        </div>
-
-      </div>      
-      
-    </div>
-
-
-
-
-	<div class="contenido">
-
-		<div class="container-fluid">
-
-
-			<div class="row-fluid">			
-				<div class="span12">
-
-
-				</div>
-			</div>
-
-
-		</div> <!-- /container -->
-	</div>
-
-	<footer>
-		<div class="container-fluid">
-			<div class="row-fluid">
-				<div class="span12">
-					<div class="row-fluid">
-						<div class="span6">
-							<p class="color_p2">&copy; Company 2012</p>
-						</div>
-						<div class="span6">
-							<p class="color_p3">&copy; Company 2012</p>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</footer>	
-
-
-
-        <!-- VENTANAS MODAL-->
     
+    <!-- VENTANAS MODAL-->
+
             <!-- registrarse-->
     <div id="modalregistro" class="modal hide fade" style="display: none;">    
         <div class="modal-header">
@@ -209,7 +139,7 @@
                     <label class="control-label">Fecha de Nacimiento: </label>
                     <div class="controls">
                         <div class="input-append date" id="dp_reg" data-date="12/02/2013" data-date-format="dd-mm-yyyy">
-                            <input class="span1" size="16" value="12/02/2013" readonly="readonly" type="text">
+                            <input class="span2" size="16" value="12/02/2013" readonly="readonly" type="text">
                                 <span class="add-on"><i class="icon-calendar"></i></span>
                         </div>
                     </div>
@@ -327,24 +257,28 @@
         </div>
     </div>
 
-    <script src="js/bootstrap-modal.js"></script>   <!--modal--> 
+
+       
+    <script src="js/bootstrap-modal.js"></script>   
     <script src="js/jquery.js"></script>   
     <script src="js/jquery-1.8.2.min.js"></script>    
-    <script src="js/bootstrap.min.js"></script>  <!--modal-->    
     <script src="js/jquery.masonry.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>  <!--modal y pestañas-->
 
     <script src="js/bootstrap-datepicker.js"></script>            
     <script>
       $(function(){
-        $('#dp_edi').datepicker();     
         $('#dp_reg').datepicker();     
       });
     </script>    
+
 
     <script src="js/si.files.js"></script>
     <script>
        SI.Files.stylizeAll();    
     </script>
 
+    <script type="text/javascript" src="http://twitter.github.com/bootstrap/assets/js/bootstrap-collapse.js"></script>
+    
 </body>
 </html>

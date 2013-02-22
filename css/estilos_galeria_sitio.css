@@ -3,6 +3,10 @@
   min-height: 40px;
 } 
 
+.ubicacion button{
+	border: 1px solid #88bfe8;
+}
+
 /*.ubicacion .btn{
 	color: #007E00;
 	font-weight: bold;	
@@ -15,18 +19,18 @@
   	border: 1px solid #ccc;
   	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
-	border-radius: 6px;
+	border-radius: 6px;	
 }
 
 .foto_galeria{
-	width: 200px;
+	width: auto;
 	height: 150px;	
 	margin: 0 auto;
-	padding-top: 10px;
+	padding: 10px;
 }
 
 .foto_galeria img{
-   	width: 100%;
+   	width: auto;
 	height: 100%;
 }
 
@@ -35,23 +39,25 @@
 }
 
 .autor{
-	margin: 0 auto;
-	padding: 10px;
+	width: auto;
+	margin-left: 10px;
+	overflow: hidden;	
+	
 }
 .autor .autor_galeria{
 	width: 30px;
-	height: 30px;	
-	position: relative;
+	height: 30px;		
 	float: left;
-	}
+}
 
 .autor .autor_galeria img{
    	width: 100%;
 	height: 100%;
 }
 .autor h6{
-	width: 175px;
-	height: 20px;	
- 	margin-left: 40px;
-	overflow: hidden;			
+	width: 150px;
+	height: 20px;
+ 	margin-left: 10px;
+ 	float: left;
+	overflow: hidden;	
 }

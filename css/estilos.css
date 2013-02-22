@@ -188,3 +188,14 @@ section{
     padding-top: 20px;
   }
 }
+
+@media screen and (max-width:380px){
+  .busqueda input{
+    width: 160px;
+  }
+}
+@media screen and (max-width:320px){
+  .busqueda input{
+    width: 110px;
+  }
+}
